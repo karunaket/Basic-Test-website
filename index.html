@@ -21,6 +21,43 @@
 <meta name="twitter:url" content="https://www.smilingmind.com.au/smiling-mind-for-schools"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="description" content="" />
+
+<style>
+  .dropbtn {
+    /* color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+
 <link rel="preconnect" href="https://images.squarespace-cdn.com">
 <script type="text/javascript" src="//use.typekit.net/ik/ZDGrygMmydeLiZLRwe5dMsTEqAuW3AwX-uFKSEGd-xIfe7tBfFHN4UJLFRbh52jhWDmywcjXweIXwAjDwQyqwDyRjhj3jD6U5s7mMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0ShuTde80Zkul-AoqOWycdQ60SaBujW48Sagyjh90jhNlOfG0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUyjamTiY8Djhy8ZYmC-Ao1OcFzdPUyjamTiY8Djhy8ZYmC-Ao1Oco8ifUySkolZPUCdhFydeyzSabCShuTde80Zkul-AoqOWycdQ60SaBujW48Sagyjh90jhNlOYFl-AUTdcil-AoqOcFzdPoyiPUDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80Zko0ZWbCiaiaOcBDOcu8OYiaikoDdA8C-Ao1OAuTdcblpeZl5foDSWmyScmDSeBRZPoRdhXCiaiaO1Fl-AUTdcil-AoqOcFzdPoyiPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJwSY4zpe8ljPu0daZyJ68DdhZTjPu3Scv7fbRKHyMMeMw6MKG4fHvgIMMjgfMfH6GJCwbgIMMjgPMfH6qJnbIbMg6eJMJ7fbKOMsMMeMS6MKG4f5w7IMMj2PMfH6qJCMIbMg65JMJ7fbKwMsMMegI6MKGHfF7xMsMgegw6MKGHf5-xMsMgeMI6MKGHfFrxMsMgeMw6MKGHf55xMsMgeMb6MKGHf5exMsMgeM96MKGHf5AxMsMgeMj6MKGHfF0xMsMgeMS6MKGHfFcxMsMgeMq6MKGHf5KxMsMgegM6MKGHfFkxMsMgegI6MTMg34cYN69.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -672,10 +709,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div data-nc-container="bottom-left">
               <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
                 
-  <!-- <div class="Header-nav-inner"> -->
-    <a href="Know_Your_Anixety_Level.html" class="Header-nav-item">Know Your Anixety Level</a><a href="https://www.smilingmind.com.au/smiling-mind-generation" class="Header-nav-item">Meet Aimee!</a><a href="/smiling-mind-app" class="Header-nav-item">Mindful Exercises</a><span class="Header-nav-item Header-nav-item--folder">
+  <div class="Header-nav-inner">
+    <a href="Know_Your_Anixety_Level.html" class="Header-nav-item" style="font-size: 21px;">Answer these questions</a><a href="https://anxiety-mhvaartqouluycfcbnkwpk.streamlit.app/" class="Header-nav-item"style="font-size: 21px;">Meet Aimee - Our AI Counselor!</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn" style="font-size: 21px;">Mindful Sessions</button>
+      <div class="dropdown-content">
+        <a href="Music.html">Music</a>
+        <a href="relaxation_exercises.html">Relaxation Exercises</a>
+        <a href="yoga.html">Yoga</a>
+      </div>
+    </div>
 
-      <a href="/for-education" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">At school</a>
+    <a href="appointment.html" class="Header-nav-item" style="font-size: 21px;">Book an Appointment</a><span class="Header-nav-item Header-nav-item--folder">
 
       <span class="Header-nav-folder">
         
@@ -705,8 +751,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
       </span>
     </span><span class="Header-nav-item Header-nav-item--folder">
-
-      <a href="/at-home-1" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">At home</a>
 
       <span class="Header-nav-folder">
         
@@ -836,29 +880,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div data-nc-container="bottom-right">
 
               <nav class="Header-nav Header-nav--secondary" data-nc-element="secondary-nav" data-content-field="navigation">
-                
-  <div class="Header-nav-inner">
-    <span class="Header-nav-item Header-nav-item--folder">
-
-      <a href="/login" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">Login</a>
-
-      <span class="Header-nav-folder">
-        
-          
-            
-              <a href="https://app.smilingmind.com.au" class="Header-nav-folder-item">Free App</a>
-            
-          
-        
-          
-            
-              <a href="https://learninghub.smilingmind.com.au" class="Header-nav-folder-item">Learning Hub</a>
-            
-          
-        
-      </span>
-    </span>
-  </div>
 
               </nav>
 
@@ -885,7 +906,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1689807780670" id="page-63dadf173df072126e5ea2ed"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="11.464088397790055" data-block-type="21" id="block-yui_3_17_2_1_1677016670290_5706"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="row sqs-row"><div class="col sqs-col-8 span-8"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" id="block-63dadf173df072126e5ea2ee"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <h1 style="white-space:pre-wrap;"><strong>Mindscape by the Mindful Mavericks</strong></h1><h3 style="white-space:pre-wrap;"><strong>Mindscape's suite of education products have been designed to create impact—not only for students, but for different age groups to monitor and control their anxiety.</strong></h3><p class="" style="white-space:pre-wrap;"></p>
+  <h1 style="white-space:pre-wrap;"><strong>Mindscape</strong></h1><h3 style="white-space:pre-wrap;"><p style="font-size: 35px;">by the Mindful Mavericks!</p><strong>Mindscape's suite of education products have been designed to create impact—not only for students, but for different age groups to monitor and control their anxiety.</strong></h3><p class="" style="white-space:pre-wrap;"></p>
 </div>
 
 
